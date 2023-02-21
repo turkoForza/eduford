@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,400;0,500;0,600;0,700;1,200&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  line-height: 1.5;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+header a img {
+  height: 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header i {
+  display: none !important;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+header ul li a {
+  color: white;
+  font-family: "Righteous", cursive;
+}
+header ul li::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #FF0000;
+  margin: auto;
+  transition: 0.5s all;
+}
+header ul li:hover::after {
+  width: 100%;
+  transition: 0.5s all;
+}
+
+body {
+  background: rgb(233, 212, 175);
+}
+
+.page {
+  font-family: "Kodchasan", sans-serif;
+  padding: 0 7%;
+  background: rgb(233, 212, 175);
+}
+.page-1 {
+  height: 100vh;
+  background: linear-gradient(rgba(32, 32, 70, 0.5), rgba(32, 32, 70, 0.5)), url(/images/banner.png) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.page-1 h1 {
+  font-size: 3rem;
+}
+.page-2 .box {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  background-color: bisque;
+  cursor: pointer;
+}
+.page-2 .box p {
+  text-align: justify;
+}
+.page-2 .box:hover {
+  box-shadow: 0 0 0.5rem black;
+}
+.page-3 .box-container {
+  gap: 3rem !important;
+}
+.page-3 .box-container .card {
+  position: relative;
+}
+.page-3 .box-container .card img {
+  border-radius: 1rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  cursor: pointer;
+}
+.page-3 .box-container .card .layer {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  padding: 0;
+  background-color: rgba(255, 0, 0, 0.5882352941);
+  bottom: 0;
+  right: 0;
+  border-radius: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 0;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.page-3 .box-container .card:hover .layer {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  font-size: 2rem;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.page-4 .box-container {
+  gap: 3rem !important;
+}
+.page-4 .box-container .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.page-4 .box-container .card img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.page-5 .box-container {
+  gap: 3rem !important;
+}
+.page-5 .box-container .s-box {
+  display: flex;
+  gap: 2rem;
+  background-color: bisque;
+  padding: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.page-5 .box-container .s-box img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.page-5 .box-container .s-box-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.page-5 .box-container .s-box-info .stars {
+  color: gold;
+}
+.page-6 {
+  margin: 3% 7%;
+  background: linear-gradient(rgba(32, 32, 70, 0.6), rgba(32, 32, 70, 0.6)), url(/images/banner2.jpg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  color: white;
+  text-align: center;
+  padding: 10rem;
+  border-radius: 1rem;
+}
+.page-6 h1 {
+  font-size: 3rem;
+}
+footer {
+  margin: 1% 0;
+  gap: 1.1rem;
+}
+footer .social {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+footer .social i {
+  cursor: pointer;
+}
+footer .social i:hover {
+  scale: 1.2;
+}
+
+.secondary {
+  font-family: "Kodchasan", sans-serif;
+}
+.secondary .up {
+  height: 50vh;
+  background: linear-gradient(rgba(32, 32, 70, 0.5), rgba(32, 32, 70, 0.5)), url(/images/background.jpg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.secondary .up h1 {
+  font-size: 3rem;
+  color: white;
+  padding: 2rem;
+}
+.secondary .down {
+  margin: 3% 7%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.secondary .down .left {
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.secondary .down .left h1 {
+  font-size: 3rem;
+}
+.secondary .down .left p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.secondary .down .left a {
+  width: 15rem;
+  text-align: center;
+  align-self: center;
+}
+.secondary .down img {
+  flex: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 50%;
+}
+
+#blog .down .left {
+  flex: 70%;
+}
+#blog .down .left img {
+  width: 100%;
+}
+#blog .down .left .words {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#blog .down .right {
+  flex: 25%;
+}
+#blog .down .right h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+  background-color: #FF0000;
+  padding: 0.5rem;
+}
+#blog .down .right .entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+#blog .down form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 1rem;
+  gap: 1rem;
+}
+#blog .down form input, #blog .down form textarea {
+  padding: 0.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+#blog .down form button {
+  width: 10rem;
+  background-color: transparent;
+}
+
+#contact {
+  margin: 3% 7%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#contact iframe {
+  height: 30rem;
+}
+#contact > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#contact > div #adress {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  flex: 49%;
+}
+#contact > div #adress .a-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#contact > div #adress .a-item i {
+  font-size: 2rem;
+  color: #FF0000;
+}
+#contact > div form {
+  flex: 49%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contact > div form input, #contact > div form textarea {
+  padding: 0.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+#contact > div form button {
+  width: 10rem;
+  background-color: transparent;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .title {
+  margin: 5% 0;
+  text-align: center;
+}
+.main-container .title h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.main-container .box-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: repeat(1fr, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.box-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: repeat(1fr, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.page-1 a, .page-6 a, .secondary .down .left a, #blog .down form button, #contact > div form button {
+  padding: 1rem 2rem;
+  display: grid;
+  align-content: center;
+  color: white;
+  border: 0.1rem solid white;
+  border-radius: 0.3rem;
+  transition: 0.5s background-color;
+  position: relative;
+  cursor: pointer;
+}
+.page-1 a::after, .page-6 a::after, .secondary .down .left a::after, #blog .down form button::after, #contact > div form button::after {
+  content: "";
+  display: inline-block;
+  height: 0.1rem;
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  right: -15%;
+  background-color: antiquewhite;
+}
+.page-1 a::before, .page-6 a::before, .secondary .down .left a::before, #blog .down form button::before, #contact > div form button::before {
+  content: "";
+  display: inline-block;
+  height: 0.1rem;
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  background-color: antiquewhite;
+}
+.page-1 a:hover, .page-6 a:hover, .secondary .down .left a:hover, #blog .down form button:hover, #contact > div form button:hover {
+  background-color: #FF0000;
+  transition: 0.5s all;
+}
+
+@media (max-width: 900px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  header a img {
+    height: 3rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header i {
+    display: block !important;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  header ul {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #FF0000;
+  }
+  header ul li {
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+  header ul li a {
+    color: white;
+    font-family: "Righteous", cursive;
+    padding-left: 1rem;
+  }
+  header ul li::after {
+    content: "";
+    display: none !important;
+    width: 0%;
+    height: 2px;
+    background-color: #FF0000;
+    margin: auto;
+    transition: 0.5s all;
+  }
+  html {
+    font-size: 62.5%;
+  }
+}
+.active {
+  right: 0 !important;
+}/*# sourceMappingURL=style.css.map */
