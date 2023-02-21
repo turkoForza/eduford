@@ -5,3 +5,9 @@
     <li>SCSS</li>
     <li>JS</li>
 </ul>
+
+<h3>Preview:</h3>
+
+<img src="screen.gif">
+
+<h3>This site online <a href="https://delightful-puffpuff-d038a2.netlify.app/">here!</a>
